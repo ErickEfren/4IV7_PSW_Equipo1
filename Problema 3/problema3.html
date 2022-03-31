@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+</head>
+<body>
+    <form name="formulario" method="post" action=""></form>
+    <label><h2>Determinar la cantidad de dinero que recibirá un trabajador por concepto de las horas extras
+        trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se
+        consideran horas extras y que estas se pagan al doble de una hora normal cuando no exceden de 8;
+        si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que se pagan por horas normales y el resto al triple.
+    </h2></label>
+    <table>
+        <tr>
+            <td>Introduce cual fue tu sueldo adquirido</td>
+            <td><input type="text" id="sueldo" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td>Introduce cuantas horas trabajaste</td>
+            <td><input type="text" id="horas" onkeypress="return validare(event)"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Calcular" id="Calcular" onclick="horasExtra()"></td>
+            <td><input type="button" value="Borrar" id="Borrar" onclick="borrarF()"></td>
+        </tr>
+        <tr>
+            <td>En total:</td>
+            <td><pre id="output">Esperando Datos...</pre></td>
+        </tr>
+    </table>
+</body>
+<script src="js/operaciones.js"></script>
+</html>
