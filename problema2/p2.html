@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+        <label>Entre 3 números, imprimir el mayor de ellos.</label>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>Introduzca el 1er número:</td>
+                <td>
+                    <input type="number" name="1numero" id="1numero" min="0">
+                </td>
+            </tr>
+            <tr>
+                <td>Introduzca el 2do número:</td>
+                <td>
+                    <input type="number" name="2numero" id="2numero" min="0">
+                </td>
+            </tr>
+            <tr>
+                <td>Introduzca el 3er número:</td>
+                <td>
+                    <input type="number" name="3numero" id="3numero" min="0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="return validar(this)">Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <td><h3 id="resultado"> </h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <pre  id="notificacion">
+                        Esperando datos...</pre>
+    
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="js/numeros.js"></script>
+</body>
+</html>
