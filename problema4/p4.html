@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+</head>
+<body>
+    <form name="formulario" method="post" action="">
+        <label>Trabajador y su reparto anaul de utilidades</label>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>Introduzca la cantidad de años trabajados:</td>
+                <td>
+                    <input type="number" name="year" id="year" aria-valuemin="0" aria-valuemax="20">
+                </td>
+            </tr>
+            <tr>
+                <td>Introduzca su sueldo mensual:</td>
+                <td>
+                    <input type="number" name="sueldoM" id="sueldoM">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="Csueldo()">Calcular</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Su sueldo final considerando el reparto de utilidades anuales es de:</td>
+            </tr>
+            <tr>
+                <td>
+                    <pre  id="sueldoF">
+                        Esperando datos...</pre>
+    
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="js/utilidades.js"></script>
+</body>
+</html>
